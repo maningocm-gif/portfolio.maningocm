@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#17100c">
+<meta name="description" content="Chariza Mae B. Maningo — Virtual Assistant portfolio.">
+<title>Chariza Mae B. Maningo · Portfolio</title>
+<style>
+  :root { --bg:#17100c; --cream:#eee1d0; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; background:var(--bg); }
+  body { margin:0; background:var(--bg); color:var(--cream); font-family:Arial, Helvetica, sans-serif; }
+  .portfolio { position:relative; width:100%; max-width:1537px; margin:0 auto; line-height:0; }
+  .portfolio > img { display:block; width:100%; height:auto; user-select:none; -webkit-user-drag:none; }
+  /* Invisible interaction layer: it does not alter the artwork. */
+  .hotspot { position:absolute; display:block; z-index:2; background:transparent; border:0; padding:0; cursor:pointer; }
+  .hotspot:focus-visible { outline:2px solid rgba(238,225,208,.9); outline-offset:3px; }
+  .target { position:absolute; left:0; width:1px; height:1px; }
+  .contact-email { top:94.9%; left:5.0%; width:16%; height:2.0%; }
+  .contact-linkedin { top:96.1%; left:5.0%; width:18%; height:1.7%; }
+  .back-top { position:fixed; right:18px; bottom:18px; z-index:20; width:1px; height:1px; opacity:0; overflow:hidden; }
+  .sr-nav { position:fixed; top:0; left:0; z-index:30; transform:translateY(-120%); }
+  .sr-nav:focus-within { transform:translateY(0); }
+  .sr-nav a { display:inline-block; padding:8px 12px; background:#17100c; color:#eee1d0; text-decoration:none; font:12px/1 Arial,sans-serif; }
+  @media (max-width:600px) {
+    .portfolio { width:100%; }
+    /* Keep the supplied artwork intact; no redesign/reflow is applied. */
+  }
+</style>
+</head>
+<body>
+<nav class="sr-nav" aria-label="Portfolio sections">
+  <a href="#s01">01</a><a href="#s02">02</a><a href="#s03">03</a><a href="#s04">04</a>
+  <a href="#s05">05</a><a href="#s06">06</a><a href="#s07">07</a><a href="#s08">08</a>
+  <a href="#s09">09</a><a href="#s10">10</a><a href="#s11">11</a>
+</nav>
+
+<main class="portfolio" aria-label="Chariza Mae B. Maningo portfolio">
+  <img src="assets/portfolio.webp" alt="Chariza Mae B. Maningo portfolio, complete original portfolio artwork." width="1537" height="9566">
+  <span id="s01" class="target" style="top:0"></span>
+  <span id="s02" class="target" style="top:9.43%"></span>
+  <span id="s03" class="target" style="top:18.68%"></span>
+  <span id="s04" class="target" style="top:29.20%"></span>
+  <span id="s05" class="target" style="top:39.02%"></span>
+  <span id="s06" class="target" style="top:50.15%"></span>
+  <span id="s07" class="target" style="top:58.76%"></span>
+  <span id="s08" class="target" style="top:67.43%"></span>
+  <span id="s09" class="target" style="top:76.46%"></span>
+  <span id="s10" class="target" style="top:85.72%"></span>
+  <span id="s11" class="target" style="top:94.0%"></span>
+
+  <!-- Transparent links placed over the contact details in the supplied artwork. -->
+  <a class="hotspot contact-email" href="mailto:maningocm@gmail.com" aria-label="Email Chariza Mae B. Maningo"></a>
+  <a class="hotspot contact-linkedin" href="https://www.linkedin.com/in/maningocm/" target="_blank" rel="noopener noreferrer" aria-label="Open Chariza Mae B. Maningo on LinkedIn"></a>
+</main>
+</body>
+</html>
